@@ -17,7 +17,7 @@ const CalculatorButtons = () => {
 
   return (
     <section className="calculator-buttons">
-      {buttons.map((button) => <button type="button" key={button} className={button.className}>{button.key}</button>)}
+      {buttons.map((button) => <button type="button" key={button.key} className={button.className}>{button.key}</button>)}
     </section>
   );
 };
