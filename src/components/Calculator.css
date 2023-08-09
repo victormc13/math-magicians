@@ -4,7 +4,7 @@
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   width: 300px;
-  background-color: #000000;
+  background-color: #000;
   padding: 10px;
 }
 
@@ -48,7 +48,7 @@ button:hover {
 }
 
 button.operator {
-  background-color: #ff8800;
+  background-color: #f80;
   color: #333;
   font-weight: bold;
   box-shadow: 0 0 4px 4px rgba(255, 145, 0, 0.7);
@@ -56,5 +56,5 @@ button.operator {
 
 button.operator:hover {
   background-color: #333;
-  color: #ff8800;
+  color: #f80;
 }
