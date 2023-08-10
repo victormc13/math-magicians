@@ -1,12 +1,27 @@
 import './Calculator.css';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
+import calculate from '../logic/calculate';
 
-const CalculatorDisplay = () => (
-  <div className="calculator-display">
-    0
-  </div>
-);
+function CalculatorDisplay({ result }) {
+  return (
+    <div className="calculator-display">
+      {result.total}
+      {result.operation}
+      {result.next}
+    </div>
+  );
+}
 
-const CalculatorButtons = () => {
+CalculatorDisplay.propTypes = {
+  result: PropTypes.shape({
+    total: PropTypes.string,
+    next: PropTypes.string,
+    operation: PropTypes.string,
+  }).isRequired,
+};
+
+function CalculatorButtons({ result, setResult }) {
   const buttons = [
     { key: 'AC' }, { key: '+/-' }, { key: '%' }, { key: '÷', className: 'operator' },
     { key: '7' }, { key: '8' }, { key: '9' }, { key: '*', className: 'operator' },
@@ -15,18 +30,49 @@ const CalculatorButtons = () => {
     { key: '0' }, { key: '.' }, { key: '=', className: 'operator' },
   ];
 
+  const handleClick = (button) => {
+    const output = calculate(result, button.textContent);
+    setResult(output);
+  };
+
   return (
     <section className="calculator-buttons">
-      {buttons.map((button) => <button type="button" key={button.key} className={button.className}>{button.key}</button>)}
+      {buttons.map((button) => (
+        <button
+          type="button"
+          key={button.key}
+          className={button.className}
+          onClick={(e) => handleClick(e.target)}
+        >
+          {button.key}
+        </button>
+      ))}
     </section>
   );
+}
+
+CalculatorButtons.propTypes = {
+  result: PropTypes.shape({
+    total: PropTypes.string,
+    next: PropTypes.string,
+    operation: PropTypes.string,
+  }).isRequired,
+  setResult: PropTypes.func.isRequired,
 };
 
-const Calculator = () => (
-  <div className="calculator-container">
-    <CalculatorDisplay />
-    <CalculatorButtons />
-  </div>
-);
+function Calculator() {
+  const [result, setResult] = useState({
+    total: '0',
+    next: null,
+    operation: null,
+  });
+
+  return (
+    <div className="calculator-container">
+      <CalculatorDisplay result={result} />
+      <CalculatorButtons result={result} setResult={setResult} />
+    </div>
+  );
+}
 
 export default Calculator;
