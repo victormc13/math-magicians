@@ -30,8 +30,8 @@ function CalculatorButtons({ result, setResult }) {
     { key: '0' }, { key: '.' }, { key: '=', className: 'operator' },
   ];
 
-  const handleClick = (button) => {
-    const output = calculate(result, button.textContent);
+  const handleClick = (e) => {
+    const output = calculate(result, e.target.textContent);
     setResult(output);
   };
 
@@ -42,7 +42,7 @@ function CalculatorButtons({ result, setResult }) {
           type="button"
           key={button.key}
           className={button.className}
-          onClick={(e) => handleClick(e.target)}
+          onClick={handleClick}
         >
           {button.key}
         </button>
