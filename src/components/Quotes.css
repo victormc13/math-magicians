@@ -1,0 +1,18 @@
+.quote-container {
+  max-width: 700px;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  margin: 1rem;
+  border: 3px solid rgb(0, 0, 133);
+  border-radius: 8px;
+  background-color: rgb(0, 53, 102);
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 4px 4px rgba(197, 197, 197, 0.7);
+}
+
+.quote-container h4 {
+  margin: 0;
+  font-style: italic;
+}
