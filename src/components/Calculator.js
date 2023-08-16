@@ -68,10 +68,13 @@ function Calculator() {
   });
 
   return (
-    <div className="calculator-container">
-      <CalculatorDisplay result={result} />
-      <CalculatorButtons result={result} setResult={setResult} />
-    </div>
+    <article className="calculator-container">
+      <h2>Let&apos;s do some math</h2>
+      <div className="calculator">
+        <CalculatorDisplay result={result} />
+        <CalculatorButtons result={result} setResult={setResult} />
+      </div>
+    </article>
   );
 }
 

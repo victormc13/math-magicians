@@ -1,0 +1,41 @@
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border: 1px solid #f80;
+  border-radius: 4px;
+}
+
+.header-container h1 {
+  margin-left: 1.5rem;
+}
+
+.links-container {
+  margin-left: 1rem;
+  display: flex;
+  border: 1px solid #f80;
+  border-radius: 8px;
+  background-color: #000;
+}
+
+a {
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #f80;
+  color: #000;
+  border-radius: 16px;
+}
+
+a:nth-child(2) {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
