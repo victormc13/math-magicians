@@ -5,7 +5,7 @@ import calculate from '../logic/calculate';
 
 function CalculatorDisplay({ result }) {
   return (
-    <div className="calculator-display">
+    <div className="calculator-display" data-testid="display">
       {result.total}
       {result.operation}
       {result.next}
