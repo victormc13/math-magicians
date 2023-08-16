@@ -1,12 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .quote-container {
+  min-width: 300px;
   max-width: 700px;
   display: grid;
   place-items: center;
   padding: 2rem;
-  margin: 1rem;
-  border: 3px solid rgb(0, 0, 133);
+  margin: 10vh auto;
+  border: 3px solid #f80;
   border-radius: 8px;
-  background-color: rgb(0, 53, 102);
+  background-color: #000000b1;
   color: #fff;
   text-align: center;
   box-shadow: 0 0 4px 4px rgba(197, 197, 197, 0.7);
@@ -15,4 +22,14 @@
 .quote-container h4 {
   margin: 0;
   font-style: italic;
+  font-size: 1.5rem;
+}
+
+blockquote {
+  margin: 1rem;
+  font-size: 3vh;
+}
+
+span {
+  font-weight: bold;
 }
