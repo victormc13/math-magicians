@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Quote from '../Components/Quotes';
+import Quote from '../components/Quotes';
 
 describe('Quotes', () => {
   it('Renders Quote component', () => {
