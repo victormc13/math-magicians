@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should render the Home page 1`] = `
+exports[`home  Should render the Home page 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <article
+      <div
         class="welcome-container"
       >
         <h2
@@ -23,11 +23,11 @@ Object {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </section>
-      </article>
+      </div>
     </div>
   </body>,
   "container": <div>
-    <article
+    <div
       class="welcome-container"
     >
       <h2
@@ -45,7 +45,7 @@ Object {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
       </section>
-    </article>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

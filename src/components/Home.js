@@ -2,7 +2,7 @@ import './Home.css';
 
 function Home() {
   return (
-    <article className="welcome-container">
+    <div className="welcome-container">
       <h2 className="welcome-title">
         Welcome to our page!
       </h2>
@@ -24,7 +24,7 @@ function Home() {
           ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
       </section>
-    </article>
+    </div>
   );
 }
 
