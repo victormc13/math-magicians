@@ -16,11 +16,14 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -56,14 +59,14 @@
 <details>
   <summary>Server</summary>
   <ul>
-    <li>Github pages</li>
+    <li><a href="https://render.com/">Render</></li>
   </ul>
 </details>
 
 <details>
-<summary>Database</summary>
+<summary>Database:</summary>
   <ul>
-    <li>No database</li>
+    <li><a href="https://api-ninjas.com/">API Ninjas</a></li>
   </ul>
 </details>
 
@@ -73,19 +76,21 @@
 
 <!-- > Describe between 1-3 key features of the application. -->
 
-- **[Use a minimalist style to build the project]**
-- **[Best practices of ES6 syntax]**
-- **[Use of React to the functionalities of the page]**
+- **[Correct set up of React environment]**
+- **[Dynamic, functional calculator]**
+- **[Correct fetching of API's data]**
+- **[Testing with Jest and React Testing Library]**
+- **[Deployment with Render]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
+## 🚀 Live Demo <a name="live-demo"></a>
 
 <!-- > Add a link to your deployed project. -->
 
-<!-- - [Math-magicians](https://victormc13.github.io/Math-magicians/) -->
+- [Math-magicians](https://math-magicians-vmc.onrender.com/)
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
@@ -115,67 +120,41 @@ Example command:
 
 Clone this repository to your desired folder:
 
-
-Example commands:
-
 ```sh
   cd my-folder
-  git clone https://github.com/victormc13/Math-magicians.git
+  git clone https://github.com/victormc13/math-magicians.git
 ```
-
 
 ### Install
 
-Install this project with:
-
-No install require
-<!--
-Example command:
+To install this project dependencies run the following command:
 
 ```sh
-  cd my-project
-  gem install
+  npm install
 ```
---->
+
 
 ### Usage
 
-To run the project, execute the following command:
-
-- go to the folder where you cloned the repository
-- Open the index.html file with your favorite web browser
-
-<!--
-Example command:
+- To start this project on your localhost run the following command:
 
 ```sh
-  rails server
+  npm start
 ```
---->
 
-<!-- ### Run tests
 
-To run tests, run the following command: -->
+### Run tests
 
-<!--
-Example command:
+- To test this project run the following command:
 
 ```sh
-  bin/rails test test/models/article_test.rb
+  npm test
 ```
---->
 
-<!-- ### Deployment
 
-You can deploy this project using: -->
+### Deployment
 
-<!--
-Example:
-
-```sh
-
-```
- -->
+- This is not a deployable project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
